@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bowl
+  - Cooking
+  - FieldItem
+  - Knife
+  - Pot
+  - FryingPan
+  - Fryer
   layers:
   - Default
   - TransparentFX

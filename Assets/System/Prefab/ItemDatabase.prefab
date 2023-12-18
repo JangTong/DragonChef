@@ -1,0 +1,2569 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4617940463899600242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4221141429852936855}
+  - component: {fileID: 6968588148271354990}
+  m_Layer: 0
+  m_Name: ItemDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4221141429852936855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617940463899600242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6968588148271354990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617940463899600242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838e7687f0f1145309c028b3fd94b6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeofitem:
+  - origin: 0
+    rank: 0
+    bigc: 4
+    uname: URF
+    utag: none_none_none
+    itemtag: -1
+    fullness: -1
+    power: -1
+    efficiency: -1
+    freshness: -1
+    uitemimage: {fileID: 0}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790"
+    utag: potato_ingr_0
+    itemtag: 1
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 2a41b1f4726d14556a3a6e000dd89571, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAECD\uC9C8\uBC97\uAE34\uAC10\uC790"
+    utag: potato_ingr_1
+    itemtag: 101
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 9217fcf89f411410b95471ea044f6ce0, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC870\uAC01\uB0B8\uAC10\uC790"
+    utag: potato_ingr_2
+    itemtag: 201
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: c789f3f07d3b14290bb599d363bfb7c3, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uD1B5\uAC10\uC790\uAD6C\uC774"
+    utag: potato_stir_0
+    itemtag: 1001
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 2af24ac8c3e664a3e8809fe1ff7f7132, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uAC10\uC790"
+    utag: potato_stir_1
+    itemtag: 1101
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 7850a49c574204b3ead9f63b287d0bca, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uC804"
+    utag: potato_stir_2
+    itemtag: 1201
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: b3ab1242d9e22470895312052d50ead1, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uAD6D"
+    utag: potato_soup_0
+    itemtag: 3001
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 805ba14ec69114242b758bb7db5118ae, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uC870\uB9BC"
+    utag: potato_soup_1
+    itemtag: 3101
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 0d111c037f9064f7cb4d11d79dfad655, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uC2A4\uD504"
+    utag: potato_soup_2
+    itemtag: 3201
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 3c3386e768f974a449c190f50eacc99b, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uD1B5\uAC10\uC790\uC0D0\uB7EC\uB4DC"
+    utag: potato_sala_0
+    itemtag: 5001
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 76fc1fc85494647348764c4f0b251f37, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uD3EC\uCF00"
+    utag: potato_sala_1
+    itemtag: 5101
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 009d46834b4f746f38bb88011d5e338a, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uC0D0\uB7EC\uB4DC"
+    utag: potato_sala_2
+    itemtag: 5201
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: fa5bcd883656d4608a2ab97077dc8a00, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uD1B5\uAC10\uC790\uD280\uAE40"
+    utag: potato_deep_0
+    itemtag: 7001
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 71d83ff191ff84b8a813950cd6cae061, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uD280\uAE40"
+    utag: potato_deep_1
+    itemtag: 7101
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 99e3e22a411b74f059d6cd1589e17b7c, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAC10\uC790\uCE69"
+    utag: potato_deep_2
+    itemtag: 7201
+    fullness: 20
+    power: 15
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: fbaedd6b4b4a14ae4a054a3d4ffc1039, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C"
+    utag: onion_ingr_0
+    itemtag: 2
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAECD\uC9C8\uBC97\uAE34\uC591\uD30C"
+    utag: onion_ingr_1
+    itemtag: 102
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC870\uAC01\uB0B8\uC591\uD30C"
+    utag: onion_ingr_2
+    itemtag: 202
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uC591\uD30C"
+    utag: onion_stir_0
+    itemtag: 1002
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uAECD\uC9C8\uBC97\uAE34\uC591\uD30C"
+    utag: onion_stir_1
+    itemtag: 1102
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uC870\uAC01\uB0B8\uC591\uD30C"
+    utag: onion_stir_2
+    itemtag: 1202
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uCC0C\uAC1C"
+    utag: onoin_soup_0
+    itemtag: 3002
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uC870\uB9BC"
+    utag: onoin_soup_1
+    itemtag: 3102
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uC2A4\uD504"
+    utag: onoin_soup_2
+    itemtag: 3202
+    fullness: 5
+    power: 10
+    efficiency: 20
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uC0D0\uB7EC\uB4DC "
+    utag: onion_sala_0
+    itemtag: 5002
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uD3EC\uCF00"
+    utag: onion_sala_1
+    itemtag: 5102
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uBB34\uCE68"
+    utag: onion_sala_2
+    itemtag: 5202
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uD1B5\uC591\uD30C\uD280\uAE40"
+    utag: onion_deep_0
+    itemtag: 7002
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uD280\uAE40"
+    utag: onion_deep_1
+    itemtag: 7102
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC591\uD30C\uCE69"
+    utag: onion_deep_2
+    itemtag: 7202
+    fullness: 5
+    power: 10
+    efficiency: 30
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC"
+    utag: carrot_ingr_0
+    itemtag: 3
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 900e180a32b574ff489ccd2ccf93a19a, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC53B\uC740\uB2F9\uADFC"
+    utag: carrot_ingr_1
+    itemtag: 103
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: d9c179738ae5a4af99a3662b0d011cc2, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uC870\uAC01\uB0B8\uB2F9\uADFC"
+    utag: carrot_ingr_2
+    itemtag: 203
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 365a3af873d424dce8490d5e0a696818, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uB2F9\uADFC"
+    utag: carrot_stir_0
+    itemtag: 1003
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: df86574da85b94a9c8c0285ef65b3949, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uC53B\uAE34\uB2F9\uADFC"
+    utag: carrot_stir_1
+    itemtag: 1103
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 7cee5618be79d403fb3b3fb52e85b9ac, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uAD6C\uC6B4\uB2F9\uADFC\uCC44"
+    utag: carrot_stir_2
+    itemtag: 1203
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 9a41f2dab25504993800a4da197e28bf, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uCC0C\uAC1C"
+    utag: carrot_soup_0
+    itemtag: 3003
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: dfa82facec3794720a91b85ca6cb99c6, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uC870\uB9BC"
+    utag: carrot_soup_1
+    itemtag: 3103
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: ecd65bc5ec6fe4322a77641c5efc774e, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uC2A4\uD504"
+    utag: carrot_soup_2
+    itemtag: 3203
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 6f60f5281df71472b9895a9bc27e5734, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uC0D0\uB7EC\uB4DC"
+    utag: carrot_sala_0
+    itemtag: 5003
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 5d3974a647699426c89ec08a8e926e4d, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uD3EC\uCF00"
+    utag: carrot_sala_1
+    itemtag: 5103
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: ebd289f7c0ec1467bbc4c662160efa4c, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uBB34\uCE68"
+    utag: carrot_sala_2
+    itemtag: 5203
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 6f60f5281df71472b9895a9bc27e5734, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uD1B5\uB2F9\uADFC\uD280\uAE40"
+    utag: carrot_deep_0
+    itemtag: 7003
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: b29d137ac4ef0460db96a0c75c8b2c78, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uD280\uAE40"
+    utag: carrot_deep_1
+    itemtag: 7103
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: a8c49cc7844b74d39b7b139639cee845, type: 3}
+  - origin: 0
+    rank: 0
+    bigc: 1
+    uname: "\uB2F9\uADFC\uCE69"
+    utag: carrot_deep_2
+    itemtag: 7203
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 711f2078a81034dfe856675251cd541b, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC"
+    utag: blackberry_ingr_0
+    itemtag: 4
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 7d8fd4de0b02144229ce2d9ab366093e, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uAECD\uC9C8\uBC97\uAE34\uBE14\uB799\uBCA0\uB9AC"
+    utag: blackberry_ingr_1
+    itemtag: 104
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: bc1e9218aed64485b848eb830b95dcd3, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uC870\uAC01\uB0B8\uBE14\uB799\uBCA0\uB9AC"
+    utag: blackberry_ingr_2
+    itemtag: 204
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: f743e5287cf95475cb59bdb50c1267b4, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uAD6C\uC6C0"
+    utag: blackberry_stir_0
+    itemtag: 1004
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 2febf4482e63c42feba3fb41f654a16e, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uC7BC"
+    utag: blackberry_stir_1
+    itemtag: 1104
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 90efe40840e9a4917957510589fc1515, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uD4E8\uB808"
+    utag: blackberry_stir_2
+    itemtag: 1204
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 0668755ec338a408dbf2b45bdc6f91c4, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uCC0C\uAC1C"
+    utag: blackberry_Soup_0
+    itemtag: 3004
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 64f0afaf6a8fd41b594bb9c8a5aebe06, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uC870\uB9BC"
+    utag: blackberry_Soup_1
+    itemtag: 3104
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 61495226df1ea49139754ea560e359f4, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uC2A4\uD504"
+    utag: blackberry_Soup_2
+    itemtag: 3204
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 00298cfa7e17f4dca9a6d5e366a73212, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uC0D0\uB7EC\uB4DC"
+    utag: blackberry_Sala_0
+    itemtag: 5004
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: f2007cafc270b48ccac3a2a73ace8f95, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uD3EC\uCF00"
+    utag: blackberry_Sala_1
+    itemtag: 5104
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: f8f6d9b8a4a764e7ba3e7ad126a3489a, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uB4DC\uB808\uC2F1\uC0D0\uB7EC\uB4DC"
+    utag: blackberry_Sala_2
+    itemtag: 5204
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 8f697138c89944c7fa97dfb264bd9052, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uD280\uAE40"
+    utag: blackberry_deep_0
+    itemtag: 7004
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: b0a3dff3777114ea28bf1f5d230be28c, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uAECD\uC9C8\uBC97\uAE34\uBE14\uB799\uBCA0\uB9AC\uD280\uAE40"
+    utag: blackberry_deep_1
+    itemtag: 7104
+    fullness: 10
+    power: 15
+    efficiency: 30
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 85770acb20a334e50bea10d394802f9f, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 1
+    uname: "\uBE14\uB799\uBCA0\uB9AC\uCE69"
+    utag: blackberry_deep_2
+    itemtag: 7204
+    fullness: 15
+    power: 20
+    efficiency: 25
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 8aa15607031f949a38a00ebc7f0ea265, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4"
+    utag: songer_ingr_0
+    itemtag: 6
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 2ff0fbdae656541c3a8ebc0afe37b0de, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uBE44\uB298\uBC97\uAE34\uC1A1\uC5B4"
+    utag: songer_ingr_1
+    itemtag: 106
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 89fc4bf4972a3433881e3b1ee13eb529, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uC0AC\uC2DC\uBBF8"
+    utag: songer_ingr_2
+    itemtag: 206
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 036836c6aa74d49bb847394b9e6ff013, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uD1B5\uC1A1\uC5B4\uAD6C\uC774"
+    utag: songer_stir_0
+    itemtag: 1006
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: b160c8823ba3b451ca361bee84a42e25, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uAD6C\uC774"
+    utag: songer_stir_1
+    itemtag: 1106
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 2324becfcde8f4e2a846022117f8919e, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uBCF6\uC74C"
+    utag: songer_stir_2
+    itemtag: 1206
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 568f6e1b0c7b64042babd4c6de7ef766, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uCC1C"
+    utag: songer_soup_0
+    itemtag: 3006
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 2be796bb658f74b7284a02a9b70e9155, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uD0D5"
+    utag: songer_soup_1
+    itemtag: 3106
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 194ae6fda032741369b703e6c83cfe2c, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 1
+    uname: "\uC1A1\uC5B4\uC2A4\uD504"
+    utag: songer_soup_2
+    itemtag: 3206
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: a42af3e413beb45dfbe0ced41950fa9b, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uC0D0\uB7EC\uB4DC"
+    utag: songer_sala_0
+    itemtag: 5006
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: cd5e2accbc45e41d1be66b8f6ff522c8, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uD3EC\uCF00"
+    utag: songer_sala_1
+    itemtag: 5106
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 1df12616f325a4a7ea6eb76fbbae2453, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uB4DC\uB808\uC2F1\uC0D0\uB7EC\uB4DC"
+    utag: songer_sala_2
+    itemtag: 5206
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 8762345e2a5054d6dbd78362c04673f8, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uD1B5\uC1A1\uC5B4\uD280\uAE40"
+    utag: songer_deep_0
+    itemtag: 7006
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 9483974e75a2148e3ad467b98253d1a4, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uAE4C\uC2A4"
+    utag: songer_deep_1
+    itemtag: 7106
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 2cf7ea7b9381941deb01e91389508f0e, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 2
+    uname: "\uC1A1\uC5B4\uCE69"
+    utag: songer_deep_2
+    itemtag: 7206
+    fullness: 30
+    power: 15
+    efficiency: 30
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 287035c5d2c3c4d1ea700660fe1b26a1, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC904\uAE30"
+    utag: herb_ingr_0
+    itemtag: 7
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 9c6ba6fe986854dbf810ef2676bc3eac, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC78E"
+    utag: herb_ingr_1
+    itemtag: 107
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 56db047805f5840fc883a67dfd8bd308, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uD398\uC2A4\uD1A0"
+    utag: herb_ingr_2
+    itemtag: 207
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 86253dee6964b49688e41dd519767029, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC904\uAE30\uBCF6\uC74C"
+    utag: herb_stir_0
+    itemtag: 1007
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 5f4faa4738eb64560a4ce8eb2ae66edc, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC78E\uBCF6\uC74C"
+    utag: herb_stir_1
+    itemtag: 1107
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 2878591826f31440a95e4472bc198a83, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uD30C\uC6B0\uB354"
+    utag: herb_stir_2
+    itemtag: 1207
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: a5044879e82aa479194fe458e8ac21d8, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC904\uAE30\uC2A4\uD504"
+    utag: herb_soup_0
+    itemtag: 3007
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 2c3ea986fd96545f1a1d0df75182a294, type: 3}
+  - origin: 1
+    rank: 1
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uD0D5"
+    utag: herb_soup_1
+    itemtag: 3107
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: d584ac7cec707457fae27bca809e2c1f, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uD398\uC2A4\uD1A0\uC2A4\uD504"
+    utag: herb_soup_2
+    itemtag: 3207
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 1ac3d5b846e7c402cb1c4197f2c56bbf, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC904\uAE30\uC0D0\uB7EC\uB4DC"
+    utag: herb_sala_0
+    itemtag: 5007
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: c67455addb7104287a54ddba33f78abd, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC0D0\uB7EC\uB4DC"
+    utag: herb_sala_1
+    itemtag: 5107
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 2db81e1fe618f4c2ebea7b3879f46532, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uB4DC\uB808\uC2F1\uC0D0\uB7EC\uB4DC"
+    utag: herb_sala_2
+    itemtag: 5207
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: a59baf018ef044fa5991fd8e4fc49995, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC904\uAE30\uD280\uAE40"
+    utag: herb_deep_0
+    itemtag: 7007
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: be9ab5377aa2c41a29eb1ca0f3863d87, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uC78E\uD280\uAE40"
+    utag: herb_deep_1
+    itemtag: 7107
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: 7808a8cdf2f7b44eaa618da3c348b226, type: 3}
+  - origin: 1
+    rank: 2
+    bigc: 1
+    uname: "\uC2E0\uBE44\uD55C\uD5C8\uBE0C\uCE69"
+    utag: herb_deep_2
+    itemtag: 7207
+    fullness: 5
+    power: 45
+    efficiency: 50
+    freshness: 7
+    uitemimage: {fileID: 21300000, guid: a705a6e80a8c84137ac3493cedfc49f5, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_ingr_0
+    itemtag: 8
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_ingr_1
+    itemtag: 108
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 0
+    bigc: 3
+    uname: 
+    utag: fairy_ingr_2
+    itemtag: 208
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_stir_0
+    itemtag: 1008
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_stir_1
+    itemtag: 1108
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_stir_2
+    itemtag: 1208
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_soup_0
+    itemtag: 3008
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_soup_1
+    itemtag: 3108
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_soup_2
+    itemtag: 3208
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_sala_0
+    itemtag: 5008
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_sala_1
+    itemtag: 5108
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_sala_2
+    itemtag: 5208
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_deep_0
+    itemtag: 7008
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_deep_1
+    itemtag: 7108
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 3
+    uname: 
+    utag: fairy_deep_2
+    itemtag: 7208
+    fullness: 20
+    power: 50
+    efficiency: 70
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C"
+    utag: windrabbit_ingr_0
+    itemtag: 9
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: ee66c7315b1d94a62a957e28bc3247e0, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uD1A0\uB9C9\uB09C\uBC14\uB78C\uD1A0\uB07C"
+    utag: windrabbit_ingr_1
+    itemtag: 109
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: db50048010a604a1e837dac7959c0c21, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uC21C\uC0B4\uBC14\uB78C\uD1A0\uB07C"
+    utag: windrabbit_ingr_2
+    itemtag: 209
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 71704f88630514fd0a5bf9234a3c5be5, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uBCF6\uC74C"
+    utag: windrabbit_stir_0
+    itemtag: 1009
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 6a76b3764b9e64ec5a21839e75815d98, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uD1A0\uB9C9\uB09C\uBC14\uB78C\uD1A0\uB07C\uBCF6\uC74C"
+    utag: windrabbit_stir_1
+    itemtag: 1109
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 84613b35057a14ca2abefb16654e4708, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uC21C\uC0B4\uBC14\uB78C\uD1A0\uB07C\uBCF6\uC74C"
+    utag: windrabbit_stir_2
+    itemtag: 1209
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 4dd26ee505bb14f6ea0889835aa6531b, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uCC1C"
+    utag: windrabbit_soup_0
+    itemtag: 3009
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: e8ffbce5e36c14ce087e70cdd03e096e, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uD0D5"
+    utag: windrabbit_soup_1
+    itemtag: 3109
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 5a27a0bc7db754600a87414ed58f62cc, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uC2A4\uD504"
+    utag: windrabbit_soup_2
+    itemtag: 3209
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: e2503316cc8654cb0a783d08f562d000, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uC0D0\uB7EC\uB4DC"
+    utag: windrabbit_sala_0
+    itemtag: 5009
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: b8671e6aaa74d4bc4a20e3a006ae24d0, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uD3EC\uCF00"
+    utag: windrabbit_sala_1
+    itemtag: 5109
+    fullness: 45
+    power: 30
+    efficiency: 50
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 460601591942e42edbe12d7891544f4f, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uB4DC\uB808\uC2F1\uC0D0\uB7EC\uB4DC"
+    utag: windrabbit_sala_2
+    itemtag: 5209
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 66ca66395ef5844c59f3e6d0c3c1272c, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uBC14\uB78C\uD1A0\uB07C\uD280\uAE40"
+    utag: windrabbit_deep_0
+    itemtag: 7009
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 3887bb59e943d49dea29b6148d3b7055, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uD1A0\uB9C9\uB09C\uBC14\uB78C\uD1A0\uB07C\uD280\uAE40"
+    utag: windrabbit_deep_1
+    itemtag: 7109
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 671fd557d57c4463fae6e0f0077dae75, type: 3}
+  - origin: 1
+    rank: 3
+    bigc: 0
+    uname: "\uC21C\uC0B4\uBC14\uB78C\uD1A0\uB07C\uD280\uAE40"
+    utag: windrabbit_deep_2
+    itemtag: 7209
+    fullness: 45
+    power: 30
+    efficiency: 60
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 59173481f03ee483fb8cdc29ce19b8e5, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: "\uAC00\uC8FD\uC2E0\uBC1C"
+    utag: shoe_ingr_0
+    itemtag: 10
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300000, guid: bfd8e785effd1476fb5d471093a550f1, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: "\uAC00\uC8FD\uC2E0\uBC1C\uAECD\uB370\uAE30"
+    utag: shoe_ingr_1
+    itemtag: 110
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300000, guid: 29a59ffbe73d9480b8dd4aeaab39efba, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: "\uAC00\uC8FD\uC2E0\uBC1C\uC758\uAC00\uC8FD"
+    utag: shoe_ingr_2
+    itemtag: 210
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300000, guid: 60f7200a8244741b085f0172ad64a8b4, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: "\uAC00\uC8FD\uC2E0\uBC1C\uBCF6\uC74C"
+    utag: shoe_stir_0
+    itemtag: 1010
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300000, guid: d0564ce7c0d83417e9ecdec75939a2bc, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_stir_1
+    itemtag: 1110
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_stir_2
+    itemtag: 1210
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_soup_0
+    itemtag: 3010
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_soup_1
+    itemtag: 3110
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_soup_2
+    itemtag: 3210
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_sala_0
+    itemtag: 5010
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: "\uAC00\uC8FD\uC2E0\uBC1C\uAECD\uB370\uAE30\uC0D0\uB7EC\uB4DC"
+    utag: shoe_sala_1
+    itemtag: 5110
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300000, guid: a2d05f6679c3b4cadb4fbff8f21e632f, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_sala_2
+    itemtag: 5210
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: "\uAC00\uC8FD\uC2E0\uBC1C\uD280\uAE40"
+    utag: shoe_deep_0
+    itemtag: 7010
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300000, guid: a63efd9baeef54ac0bbf7fca4adf19bd, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_deep_1
+    itemtag: 7110
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 0
+    uname: 
+    utag: shoe_deep_2
+    itemtag: 7210
+    fullness: 50
+    power: 5
+    efficiency: 5
+    freshness: 9
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4"
+    utag: noger_ingr_0
+    itemtag: 11
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 7ba06924eece54a5389fb2cdeac04934, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uBE44\uB298\uBC97\uAE34\uB18D\uC5B4"
+    utag: noger_ingr_1
+    itemtag: 111
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 7cfd7dc513e024717be76886830648e2, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uC0AC\uC2DC\uBBF8"
+    utag: noger_ingr_2
+    itemtag: 211
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: e8703b68fe88b41f7a32a5a9b0c5d031, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uBCF6\uC74C"
+    utag: noger_stir_0
+    itemtag: 1011
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: fa7e69ce779cf4266a99995ec17a6f67, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uBE44\uB298\uBC97\uAE34\uB18D\uC5B4\uBCF6\uC74C"
+    utag: noger_stir_1
+    itemtag: 1111
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 655046845cc0342d1b2f738124104060, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uC0AC\uC2DC\uBBF8\uBCF6\uC74C"
+    utag: noger_stir_2
+    itemtag: 1211
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: e3bdbd1700a3443118fc9a824bbffd4e, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uD0D5"
+    utag: noger_soup_0
+    itemtag: 3011
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: af233bd6135a24a679bfe701b675413a, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uC870\uB9BC"
+    utag: noger_soup_1
+    itemtag: 3111
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 9737128677a10495d9195f908acf29ab, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uC2A4\uD504"
+    utag: noger_soup_2
+    itemtag: 3211
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: e12e6eaff29014308916159c570af911, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uC0D0\uB7EC\uB4DC"
+    utag: noger_sala_0
+    itemtag: 5011
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 0b9ae4f98816045f19c9346d170e0a06, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uD3EC\uCF00"
+    utag: noger_sala_1
+    itemtag: 5111
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 34523bc3e96e34eca8088b503741005a, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uB4DC\uB808\uC2F1\uD3EC\uCF00"
+    utag: noger_sala_2
+    itemtag: 5211
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: fe0afda023da84d9fa55d1f586f551cf, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uD1B5\uB18D\uC5B4\uD280\uAE40"
+    utag: noger_deep_0
+    itemtag: 7011
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: a5e43a2b4e20b481da71abc46c5cd227, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uD280\uAE40"
+    utag: noger_deep_1
+    itemtag: 7111
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: ec1c527bb1dda4028805d971cffccf1c, type: 3}
+  - origin: 2
+    rank: 0
+    bigc: 2
+    uname: "\uB18D\uC5B4\uC0AC\uC2DC\uBBF8\uD280\uAE40"
+    utag: noger_deep_2
+    itemtag: 7211
+    fullness: 20
+    power: 25
+    efficiency: 20
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 100ba9a0e0b594e098fc45ce831072e6, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC528\uC11C\uD380\uD2B8"
+    utag: seaserpent_ingr_0
+    itemtag: 12
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 1d7cf1de3a13141e28b2610209a3d40d, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC190\uC9C8\uD55C\uC528\uC11C\uD380\uD2B8"
+    utag: seaserpent_ingr_1
+    itemtag: 112
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 2ccae2e111e28499dbf9d3306916f1c3, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC21C\uC0B4\uC528\uC11C\uD380\uD2B8"
+    utag: seaserpent_ingr_2
+    itemtag: 212
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 0ec41a95d82604cdfb56a49a46806683, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC528\uC11C\uD380\uD2B8\uBCF6\uC74C"
+    utag: seaserpent_stir_0
+    itemtag: 1012
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: d1bc5f428ef624fe581dbc4afd74d178, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC190\uC9C8\uD55C\uC528\uC11C\uD380\uD2B8\uBCF6\uC74C"
+    utag: seaserpent_stir_1
+    itemtag: 1112
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC21C\uC0B4\uC528\uC11C\uD380\uD2B8\uBCF6\uC74C"
+    utag: seaserpent_stir_2
+    itemtag: 1212
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC528\uC11C\uD380\uD2B8\uD0D5"
+    utag: seaserpent_soup_0
+    itemtag: 3012
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 03d64813801024930aaf0c4058d42ee4, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC190\uC9C8\uD55C\uC528\uC11C\uD380\uD2B8\uC870\uB9BC"
+    utag: seaserpent_soup_1
+    itemtag: 3112
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC21C\uC0B4\uC528\uC11C\uD380\uD2B8\uC2A4\uD504"
+    utag: seaserpent_soup_2
+    itemtag: 3212
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC528\uC11C\uD380\uD2B8\uC0D0\uB7EC\uB4DC"
+    utag: seaserpent_sala_0
+    itemtag: 5012
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: d3eaa222bbdc0442a9ff83b38377a4b8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC190\uC9C8\uD55C\uC528\uC11C\uD380\uD2B8\uD3EC\uCF00"
+    utag: seaserpent_sala_1
+    itemtag: 5112
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC21C\uC0B4\uC528\uC11C\uD380\uD2B8\uB4DC\uB808\uC2F1\uC0D0\uB7EC\uB4DC"
+    utag: seaserpent_sala_2
+    itemtag: 5212
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC528\uC11C\uD380\uD2B8\uD280\uAE40"
+    utag: seaserpent_deep_0
+    itemtag: 7012
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: a04f006ae2f364fefa1af382e7080d32, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC190\uC9C8\uD55C\uC528\uC11C\uD380\uD2B8\uD280\uAE40"
+    utag: seaserpent_deep_1
+    itemtag: 7112
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 2
+    uname: "\uC21C\uC0B4\uC528\uC11C\uD380\uD2B8\uD280\uAE40"
+    utag: seaserpent_deep_2
+    itemtag: 7212
+    fullness: 20
+    power: 30
+    efficiency: 15
+    freshness: 3
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_ingr_0
+    itemtag: 13
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_ingr_1
+    itemtag: 113
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_ingr_2
+    itemtag: 213
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_stir_0
+    itemtag: 1013
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_stir_1
+    itemtag: 1113
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_stir_2
+    itemtag: 1213
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_soup_0
+    itemtag: 3013
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_soup_1
+    itemtag: 3113
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_soup_2
+    itemtag: 3213
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_sala_0
+    itemtag: 5013
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_sala_1
+    itemtag: 5113
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_sala_2
+    itemtag: 5213
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_deep_0
+    itemtag: 7013
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_deep_1
+    itemtag: 7113
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 1
+    bigc: 0
+    uname: 
+    utag: searabbit_deep_2
+    itemtag: 7213
+    fullness: 30
+    power: 25
+    efficiency: 25
+    freshness: 4
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_ingr_0
+    itemtag: 14
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_ingr_1
+    itemtag: 114
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_ingr_2
+    itemtag: 214
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_stir_0
+    itemtag: 1014
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_stir_1
+    itemtag: 1114
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_stir_2
+    itemtag: 1214
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_soup_0
+    itemtag: 3014
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_soup_1
+    itemtag: 3114
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_soup_2
+    itemtag: 3214
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_sala_0
+    itemtag: 5014
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_sala_1
+    itemtag: 5114
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_sala_2
+    itemtag: 5214
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_deep_0
+    itemtag: 7014
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_deep_1
+    itemtag: 7114
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 2
+    bigc: 2
+    uname: 
+    utag: haema_deep_2
+    itemtag: 7214
+    fullness: 0
+    power: 75
+    efficiency: 60
+    freshness: 1
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_ingr_0
+    itemtag: 15
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_ingr_1
+    itemtag: 115
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_ingr_2
+    itemtag: 215
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_stir_0
+    itemtag: 1015
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_stir_1
+    itemtag: 1115
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_stir_2
+    itemtag: 1215
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_soup_0
+    itemtag: 3015
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_soup_1
+    itemtag: 3115
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_soup_2
+    itemtag: 3215
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_sala_0
+    itemtag: 5015
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_sala_1
+    itemtag: 5115
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_sala_2
+    itemtag: 5215
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_deep_0
+    itemtag: 7015
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_deep_1
+    itemtag: 7115
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 2
+    rank: 3
+    bigc: 2
+    uname: 
+    utag: jewelclam_deep_2
+    itemtag: 7215
+    fullness: 20
+    power: 80
+    efficiency: 55
+    freshness: 2
+    uitemimage: {fileID: 21300024, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
+  - origin: 3
+    rank: 0
+    bigc: 1
+    uname: "\uC8FC\uD669\uBC84\uC12F"
+    utag: omushroom_ingr_0
+    itemtag: 16
+    fullness: 15
+    power: 5
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 8f001c3d9614d4f8f8b461bb715c1cf3, type: 3}
+  - origin: 3
+    rank: 0
+    bigc: 1
+    uname: "\uC190\uC9C8\uD55C\uC8FC\uD669\uBC84\uC12F"
+    utag: omushroom_ingr_1
+    itemtag: 116
+    fullness: 15
+    power: 5
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: da6cd1d841aa64110ad8bdc9da2ce0b2, type: 3}
+  - origin: 3
+    rank: 0
+    bigc: 1
+    uname: "\uC8FC\uD669\uBC84\uC12F\uCC0C\uAC1C"
+    utag: omushroom_soup_0
+    itemtag: 16
+    fullness: 15
+    power: 5
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: f5ea2ff98b1034a2485b5a019148ede4, type: 3}
+  - origin: 3
+    rank: 0
+    bigc: 1
+    uname: "\uACE0\uC0AC\uB9AC\uC904\uAE30"
+    utag: gosari_ingr_0
+    itemtag: 17
+    fullness: 10
+    power: 10
+    efficiency: 25
+    freshness: 2
+    uitemimage: {fileID: 21300000, guid: 065c286b66ce4422a8a281ec2a0713d5, type: 3}
+  - origin: 3
+    rank: 0
+    bigc: 1
+    uname: "\uACE0\uC0AC\uB9AC\uC0D0\uB7EC\uB4DC"
+    utag: gosari_sala_0
+    itemtag: 5017
+    fullness: 15
+    power: 5
+    efficiency: 20
+    freshness: 3
+    uitemimage: {fileID: 21300000, guid: 0c33e559d9fda403aa7b17f35a35ef25, type: 3}
+  - origin: 3
+    rank: 2
+    bigc: 1
+    uname: "\uB2E4\uB9AC\uB2EC\uB9B0\uBC84\uC12F"
+    utag: walkmush_ingr_0
+    itemtag: 20
+    fullness: 25
+    power: 34
+    efficiency: 57
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 98cf3bce02e7a4588917a5f166ba8f10, type: 3}
+  - origin: 3
+    rank: 2
+    bigc: 1
+    uname: "\uB2E4\uB9AC\uC798\uB9B0\uBC84\uC12F"
+    utag: walkmush_ingr_1
+    itemtag: 120
+    fullness: 25
+    power: 34
+    efficiency: 57
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 736772276cc1e4ec49979cb00d2496a5, type: 3}
+  - origin: 3
+    rank: 2
+    bigc: 1
+    uname: "\uB2E4\uB9AC\uC798\uB9B0\uBC84\uC12F\uD3EC\uCF00"
+    utag: walkmush_sala_1
+    itemtag: 5120
+    fullness: 25
+    power: 34
+    efficiency: 57
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 4e6d10a126bd34d1994eddbf06514998, type: 3}
+  - origin: 4
+    rank: 0
+    bigc: 2
+    uname: "\uBE59\uC5B4\uD0B9"
+    utag: binger_ingr_0
+    itemtag: 23
+    fullness: 15
+    power: 5
+    efficiency: 10
+    freshness: 1
+    uitemimage: {fileID: 21300000, guid: 74b4d876a30154636b902e21d4edf757, type: 3}
+  - origin: 4
+    rank: 0
+    bigc: 2
+    uname: "\uBE59\uC5B4\uD0B9\uCC0C\uAC1C"
+    utag: binger_soup_0
+    itemtag: 3023
+    fullness: 15
+    power: 5
+    efficiency: 10
+    freshness: 1
+    uitemimage: {fileID: 21300000, guid: 8641b18817b0c4f0eb8f204989739639, type: 3}
+  - origin: 4
+    rank: 1
+    bigc: 0
+    uname: "\uC5BC\uB2E4\uB9CC\uC2EC\uC7A5"
+    utag: freezingheart_ingr_0
+    itemtag: 25
+    fullness: 20
+    power: 15
+    efficiency: 5
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: 9c7b68384a47b492bbe6f34f0624524e, type: 3}
+  - origin: 4
+    rank: 1
+    bigc: 0
+    uname: "\uC5BC\uB2E4\uB9CC\uC2EC\uC7A5\uCC0C\uAC1C"
+    utag: freezingheart_soup_0
+    itemtag: 3025
+    fullness: 20
+    power: 15
+    efficiency: 5
+    freshness: 4
+    uitemimage: {fileID: 21300000, guid: aad91df4ee24f4e0aa933589594dbbd3, type: 3}
+  - origin: 5
+    rank: 0
+    bigc: 1
+    uname: "\uBD88\uD0C0\uB294\uB3CC"
+    utag: firerock_ingr_0
+    itemtag: 28
+    fullness: 5
+    power: 20
+    efficiency: 10
+    freshness: 5
+    uitemimage: {fileID: 21300000, guid: b97fe9acf89144a93b4068fa1339099d, type: 3}
+  - origin: 5
+    rank: 0
+    bigc: 1
+    uname: "\uBD88\uD0C0\uB294\uB3CC\uC0D0\uB7EC\uB4DC"
+    utag: firerock_sala_0
+    itemtag: 5028
+    fullness: 5
+    power: 20
+    efficiency: 10
+    freshness: 5
+    uitemimage: {fileID: 21300000, guid: cf10b260e45ee46498c6564e1dc43175, type: 3}
+  - origin: 5
+    rank: 2
+    bigc: 1
+    uname: "\uBD88_\uAF43"
+    utag: fireflower_ingr_0
+    itemtag: 32
+    fullness: 5
+    power: 55
+    efficiency: 70
+    freshness: 1
+    uitemimage: {fileID: 21300000, guid: af14c95835807467b8be7da810a3e441, type: 3}
+  - origin: 5
+    rank: 2
+    bigc: 1
+    uname: "\uBD88_\uAF43\uC78E"
+    utag: fireflower_ingr_1
+    itemtag: 132
+    fullness: 5
+    power: 55
+    efficiency: 70
+    freshness: 1
+    uitemimage: {fileID: 21300000, guid: 9d154486813924699ae8c427c57df17c, type: 3}
+  - origin: 5
+    rank: 2
+    bigc: 1
+    uname: "\uBD88_\uAF43\uC78E\uD3EC\uCF00"
+    utag: firflower_sala_1
+    itemtag: 5132
+    fullness: 5
+    power: 55
+    efficiency: 70
+    freshness: 1
+    uitemimage: {fileID: 21300000, guid: c85b6cb00f684499d8a22efb4be38211, type: 3}
+  fieldItemPrefab: {fileID: 2960686079001711742, guid: 09284a5fcf5124d33980cf05cac8af21,
+    type: 3}
+  pos:
+  - {x: -25, y: 3, z: 10}
+  - {x: -20, y: 3, z: 10}
+  - {x: -15, y: 3, z: 10}
+  - {x: -10, y: 3, z: 10}
+  - {x: -5, y: 3, z: 10}
+  - {x: 0, y: 3, z: 10}
+  - {x: 5, y: 3, z: 10}
+  - {x: 10, y: 3, z: 10}
+  - {x: 15, y: 3, z: 10}
+  - {x: 20, y: 3, z: 10}
+  - {x: 25, y: 3, z: 10}
