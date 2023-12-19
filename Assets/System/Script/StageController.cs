@@ -54,6 +54,7 @@ public class StageController : MonoBehaviour
     {
         GoToNextTime();
         GoToNextStage();
+        ResetStageStatus();
     }
 
     void SpawnItems()
@@ -63,14 +64,16 @@ public class StageController : MonoBehaviour
         float avrMorale = 0;
         float avrCourage = 0;
 
-
-        for(int i =0;i<npcs.Count;i++) // 평균값 계산
+        if (npcs.Count > 0)
         {
-            avrMorale += npcs[i].morale;
-            avrCourage += npcs[i].courage;
+            for (int i = 0; i < npcs.Count; i++) // 평균값 계산
+            {
+                avrMorale += npcs[i].morale;
+                avrCourage += npcs[i].courage;
+            }
+            avrMorale /= npcs.Count;
+            avrCourage /= npcs.Count;
         }
-        avrMorale /= npcs.Count;
-        avrCourage /= npcs.Count;
 
 
         if (dayCount == 1) itemCount = 6;  // itemCount계산
@@ -91,30 +94,34 @@ public class StageController : MonoBehaviour
 
         for (int i = 0; i < itemCount; i++) // 아이템 생성
         {
-            int randomIndex = Random.Range(0, stage1Items.Count);
-
+            int randomIndex;
             float randomX = Random.Range(-0.5f, 0.5f);
             float randomZ = Random.Range(-0.5f, 0.5f);
             Vector3 spawnPosition = itemSpawnPoint.position + new Vector3(randomX, 0.3f, randomZ); // 아이템 스폰포인트 지정
 
             // 아이템 스폰
+
             GameObject spawnedItem = Instantiate(fieldItemPrefab, spawnPosition, Quaternion.identity);
-            spawnedItem.GetComponent<FieldItems>().SetItem(stage1Items[randomIndex]);
             switch (stageNum)
             {
                 case 1: // 스테이지 1
+                    randomIndex = Random.Range(0, stage1Items.Count);
                     spawnedItem.GetComponent<FieldItems>().SetItem(stage1Items[randomIndex]);
                     break;
                 case 2: // 스테이지 2
+                    randomIndex = Random.Range(0, stage2Items.Count);
                     spawnedItem.GetComponent<FieldItems>().SetItem(stage2Items[randomIndex]);
                     break;
                 case 3: // 스테이지 3
+                    randomIndex = Random.Range(0, stage3Items.Count);
                     spawnedItem.GetComponent<FieldItems>().SetItem(stage3Items[randomIndex]);
                     break;
                 case 4: // 스테이지 4
+                    randomIndex = Random.Range(0, stage4Items.Count);
                     spawnedItem.GetComponent<FieldItems>().SetItem(stage4Items[randomIndex]);
                     break;
                 case 5: // 스테이지 5
+                    randomIndex = Random.Range(0, stage5Items.Count);
                     spawnedItem.GetComponent<FieldItems>().SetItem(stage5Items[randomIndex]);
                     break;
             }
@@ -143,27 +150,22 @@ public class StageController : MonoBehaviour
             {
                 case 1: // 스테이지 1에서 2로 이동
                     SceneManager.LoadScene("Stage2_Ocean");
-                    ResetStageStatus();
                     stageNum++;
                     break;
                 case 2: // 스테이지 2에서 3로 이동
                     SceneManager.LoadScene("Stage3_MushroomForest");
-                    ResetStageStatus();
                     stageNum++; 
                     break;
                 case 3: // 스테이지 3에서 4로 이동
                     SceneManager.LoadScene("Stage4_Snowy land");
-                    ResetStageStatus();
                     stageNum++; 
                     break;
                 case 4: // 스테이지 4에서 5로 이동
                     SceneManager.LoadScene("Stage5_Volcano");
-                    ResetStageStatus();
                     stageNum++; 
                     break;
                 case 5: // 스테이지 5에서 엔딩으로 이동
                     SceneManager.LoadScene("Ending");
-                    ResetStageStatus();
                     break;
             }
         }
@@ -173,19 +175,18 @@ public class StageController : MonoBehaviour
         if(cookCount > 6) // 요리 횟수 6번 초과 시 시간전환
         {
             dayCount += 0.5f;
-            if (dayCount % 1 != 0) SpawnItems(); // 밤이 되면 아이템 생성
             cookCount = 0;
+            if (dayCount % 1 != 0) SpawnItems(); // 밤이 되면 아이템 생성
         }
     }
     void ResetStageStatus() // 스테이지 리셋 함수
     {
         isPreparedStage = false;
 
-        itemSpawnPoint = GameObject.Find("ItemBucket").GetComponent<Transform>(); // item스폰위치 초기화
-
         npcs.Clear();  // NPC배열 초기화
 
         NPC[] foundNPCs = GameObject.FindObjectsOfType<NPC>();
-        npcs.AddRange(foundNPCs); 
+        npcs.AddRange(foundNPCs);
+        itemSpawnPoint = GameObject.Find("ItemBucket").GetComponent<Transform>(); // item스폰위치 초기화
     }
 }
