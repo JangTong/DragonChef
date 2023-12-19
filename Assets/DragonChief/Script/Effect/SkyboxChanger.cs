@@ -24,11 +24,19 @@ public class SkyboxChanger : MonoBehaviour
     void Start()
     {
         // Initialize to the first stage
-        SetSkyboxStage(SkyboxState.Day);
+        SetSkyboxStage(SkyboxState.Blend);
     }
 
     void Update()
     {
+        if (StageController.instance.dayCount % 1 == 0)
+        {
+            currentSkyboxState = SkyboxState.Blend;
+        }
+        else if(StageController.instance.dayCount % 1 == 0.5f)
+        {
+            currentSkyboxState = SkyboxState.Night;
+        }
         SetSkyboxStage(currentSkyboxState);
     }
 

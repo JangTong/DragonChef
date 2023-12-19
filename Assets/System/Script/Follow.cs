@@ -6,7 +6,6 @@ public class Follow : MonoBehaviour
 {
     public Transform target;
     public GameObject _target;
-    public GameObject _target1;
     public Vector3 offset;
     
     public float minDistance;
@@ -26,15 +25,7 @@ public class Follow : MonoBehaviour
     public float rotationSpeed = 90f;
     
     Vector3 newRotation;
-    
-    Vector3 nnewRotation;
-    
     Vector3 CnewRotation;
-    
-    void Start()
-    {
-        
-    }
     
     // Update is called once per frame
     void Update()
@@ -45,8 +36,6 @@ public class Follow : MonoBehaviour
         qDown = Input.GetButton("LRot");
         
         Rotating();
-        
-        
     }
     
     void Rotating() {

@@ -12,13 +12,6 @@ public class ItemDB : MonoBehaviour
     }
     
     public List<TypeofItem> typeofitem = new List<TypeofItem>(); // Item database
-
-    // Stage items
-    public List<TypeofItem> stage1Items = new List<TypeofItem>();
-    public List<TypeofItem> stage2Items = new List<TypeofItem>();
-    public List<TypeofItem> stage3Items = new List<TypeofItem>();
-    public List<TypeofItem> stage4Items = new List<TypeofItem>();
-    public List<TypeofItem> stage5Items = new List<TypeofItem>();
     
     public GameObject fieldItemPrefab;
     public Vector3[] pos;
@@ -30,6 +23,4 @@ public class ItemDB : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(typeofitem[1]);
         }
     }
-
-
 }

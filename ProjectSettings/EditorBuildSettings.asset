@@ -5,7 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/DragonChef/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/DragonChief/Scenes/Stage1_Forest.unity
+    guid: ae5d0a7fa263cfb4798ebc75a044ade7
+  - enabled: 1
+    path: Assets/DragonChief/Scenes/Stage2_Ocean.unity
+    guid: 7a4f66c2d03699347886594a3fbafce7
+  - enabled: 1
+    path: Assets/DragonChief/Scenes/Stage3_MushroomForest.unity
+    guid: b6965f32c938da441afef407dce9a2d9
+  - enabled: 1
+    path: Assets/DragonChief/Scenes/Stage4_Snowy land.unity
+    guid: f6558961753083b428fc42d5e9bee000
+  - enabled: 1
+    path: Assets/DragonChief/Scenes/Stage5_Volcano.unity
+    guid: 60246eb7421042241836b5b5ed751e32
   m_configObjects: {}

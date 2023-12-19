@@ -60,7 +60,10 @@ public class Inventory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slotCnt = 36;                                                       // 슬롯 개수 선언
+        slotCnt = 36;                                                  // 슬롯 개수 선언
+
+        Cook1 = GameObject.Find("CookPos_1");
+        Cook2 = GameObject.Find("CookPos_2");
     }
 
     // Update is called once per frame
