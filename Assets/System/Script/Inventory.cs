@@ -137,6 +137,7 @@ public class Inventory : MonoBehaviour
     
     
     public void Knife(TypeofItem _item) {
+        Debug.Log("Use knife");
         if (_item.itemtag <= 299) {
             
             float _itemtag = _item.itemtag + 100f;
@@ -163,6 +164,7 @@ public class Inventory : MonoBehaviour
     }
     
     public void FryingPan(TypeofItem _item) {
+        Debug.Log("Use fryingPan");
         if (_item.itemtag <= 299) {
 
             float _itemtag = _item.itemtag + 1000f;
@@ -186,6 +188,7 @@ public class Inventory : MonoBehaviour
     }
     
     public void Pot(TypeofItem _item) {
+        Debug.Log("Use pot");
         if (_item.itemtag <= 299) {
 
             float _itemtag = _item.itemtag + 3000f;
@@ -210,6 +213,7 @@ public class Inventory : MonoBehaviour
     }
     
     public void Bowl(TypeofItem _item) {
+        Debug.Log("Use bowl");
         if (_item.itemtag <= 299) {
         
             float _itemtag = _item.itemtag + 5000f;
@@ -234,6 +238,7 @@ public class Inventory : MonoBehaviour
     }
     
     public void Deep(TypeofItem _item) {
+        Debug.Log("Use fryer");
         if (_item.itemtag <= 299) {
 
             float _itemtag = _item.itemtag + 7000f;
