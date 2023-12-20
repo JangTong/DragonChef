@@ -44,9 +44,9 @@ public class NPC : MonoBehaviour
     {
         if (Inventory.instance.isGive == true && Inventory.instance.cooknum == 6)
         {
-            fullness += Inventory.instance.pitems[0].fullness * 2;
-            morale += Inventory.instance.pitems[0].power * 2;
-            courage += Inventory.instance.pitems[0].efficiency * 2;
+            fullness += Inventory.instance.pitems[0].fullness;
+            morale += Inventory.instance.pitems[0].power;
+            courage += Inventory.instance.pitems[0].efficiency;
             Inventory.instance.isGive = false;
         }
     }

@@ -232,7 +232,7 @@ public class StageController : MonoBehaviour
 
     public void SpawnLegends()
     {
-        for (int i = 0; i < 5; i++) // 아이템 생성
+        for (int i = 0; i < 4; i++) // 아이템 생성
         {
             float randomX = Random.Range(-0.5f, 0.5f);
             float randomZ = Random.Range(-0.5f, 0.5f);
