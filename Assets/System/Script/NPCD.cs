@@ -42,11 +42,11 @@ public class NPCD : MonoBehaviour
 
     void getPoint()
     {
-        if (Inventory.instance.isGive == true && Inventory.instance.cooknum == 6)
+        if (Inventory.instance.isGive == true && Inventory.instance.cooknum == 9)
         {
-            fullness += Inventory.instance.pitems[0].fullness;
-            morale += Inventory.instance.pitems[0].power;
-            courage += Inventory.instance.pitems[0].efficiency;
+            fullness += Inventory.instance.pitems[0].fullness * 2;
+            morale += Inventory.instance.pitems[0].power * 2;
+            courage += Inventory.instance.pitems[0].efficiency * 2;
             Inventory.instance.isGive = false;
         }
     }
