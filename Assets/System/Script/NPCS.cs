@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class NPCS : MonoBehaviour
 {
-    public float fullness, morale, courage; // NPC Ω∫≈◊¿Ã≈ÕΩ∫
-    
-    public float _fullness, _morale, _courage;
+    public float fullness, morale, courage;
 
-    public bool _isFull; // ∆˜∏∏∞®¿Ã ∞°µÊ√°¥¬¡ˆ »Æ¿Œ
+    public bool isFull;
 
     void Start()
     {
@@ -22,38 +20,35 @@ public class NPCS : MonoBehaviour
     }
 
 
-    void ResetStatus()
+    public void ResetStatus()
     {
         fullness = morale = courage = 0;
-        _isFull = false;
+        isFull = false;
     }
     void CheckStatusIsOver()
     {
         if (fullness > 100f)
         {
-           Inventory.instance.isFull = true;
-            _isFull = true;
+            isFull = true;
             fullness = 100f;
-            ResetStatus();
         }
-        if (morale > 100f)
-        {
-            _isFull = true;
-            morale = 100f;
-        }
-        if (courage > 100f)
-        {
-            courage = 100f;
-        }
+        if (morale > 100f) morale = 100f;
+        if (courage > 100f) courage = 100f;
+
+        if (fullness < 0) fullness = 0;
+        if (morale < 0) morale = 0;
+        if (courage < 0) courage = 0;
     }
-    
-    void getPoint() {
-        if (Inventory.instance.isGive == true && Inventory.instance.cooknum == 8) {
-            _fullness  += Inventory.instance.pitems[0].fullness;
-            _morale += Inventory.instance.pitems[0].power;
-            _courage += Inventory.instance.pitems[0].efficiency;
+
+    void getPoint()
+    {
+        if (Inventory.instance.isGive == true && Inventory.instance.cooknum == 9)
+        {
+            fullness += Inventory.instance.pitems[0].fullness;
+            morale += Inventory.instance.pitems[0].power;
+            courage += Inventory.instance.pitems[0].efficiency;
             Inventory.instance.isGive = false;
         }
     }
-    
+
 }

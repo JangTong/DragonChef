@@ -60,7 +60,6 @@ public class Inventory : MonoBehaviour
     public GameObject Cook2;
     
     public bool isLegend = false;
-    public bool isFull = false;
     public bool isGive = false;
     
     public List<TypeofItem> pitems = new List<TypeofItem>(); 
@@ -77,7 +76,6 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DaynNight();
     }
     
     public bool AddItem(TypeofItem _item) {                                 // 아이템을 먹을 때 items 리스트에 저장해주는 함수
@@ -163,8 +161,8 @@ public class Inventory : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(cut);
             
             isCutted = true;
-            
-            
+
+            StageController.instance.cookCount++;
         }
         
         else
@@ -190,6 +188,8 @@ public class Inventory : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(cut);
                     
             isCutted = true;
+
+            StageController.instance.cookCount++;
         }
         else
             Debug.Log("더이상 구우면 타버린다...");
@@ -214,6 +214,8 @@ public class Inventory : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(cut);
                     
             isCutted = true;
+
+            StageController.instance.cookCount++;
         }
         
         else
@@ -239,6 +241,8 @@ public class Inventory : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(cut);
                     
             isCutted = true;
+
+            StageController.instance.cookCount++;
         }
         
         else
@@ -264,6 +268,8 @@ public class Inventory : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(cut);
                     
             isCutted = true;
+
+            StageController.instance.cookCount++;
         }
         
         else
@@ -325,18 +331,14 @@ public class Inventory : MonoBehaviour
         isLegend = !isLegend;
     }
     
-    public void DaynNight() {
-        if (isFull == true) {
-            for (int i = 0; i < items.Count; i++) {
-                if (items[i].freshness > 0)
-                    items[i].freshness = items[i].freshness - 1;
-                else if (items[i].freshness == 0)
-                    items.RemoveAt(i);
-                
-            }
+    public void ReducedFreshness() {
+        for (int i = 0; i < items.Count; i++)
+        {
+            if (items[i].freshness > 0)
+                items[i].freshness = items[i].freshness - 1;
+            else if (items[i].freshness == 0)
+                items.RemoveAt(i);
+
         }
     }
-    
-    
-    
 }

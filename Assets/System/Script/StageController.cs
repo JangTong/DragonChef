@@ -9,10 +9,11 @@ public class StageController : MonoBehaviour
 
     public float dayCount = 1;
 
-    public int stageNum = 1;
+    public int stageNum = 0;
     public int cookCount = 0; // 요리 횟수
 
     public bool isPreparedStage; // 활성화 시 다음 스테이지로 이동
+    public bool startItems;
 
     public Transform itemSpawnPoint;
 
@@ -23,8 +24,11 @@ public class StageController : MonoBehaviour
     public List<TypeofItem> stage3Items = new List<TypeofItem>();
     public List<TypeofItem> stage4Items = new List<TypeofItem>();
     public List<TypeofItem> stage5Items = new List<TypeofItem>();
-        
-    public List<NPC> npcs = new List<NPC>(); // NPC리스트
+
+    public NPC elfArcher;
+    public NPCA humanPriest;
+    public NPCS dwarfWarrior;
+    public NPCD humanWarrior;
 
 
     private void Awake()
@@ -42,12 +46,12 @@ public class StageController : MonoBehaviour
             }
         }
         ResetStageStatus();
+        startItems = false;
     }
 
     void Start()
     {
         GenerateStageItemList();
-        SpawnItems();
     }
 
     void Update()
@@ -55,6 +59,7 @@ public class StageController : MonoBehaviour
         GoToNextTime();
         GoToNextStage();
         ResetStageStatus();
+        if (startItems) SpawnItems();
     }
 
     void SpawnItems()
@@ -64,27 +69,32 @@ public class StageController : MonoBehaviour
         float avrMorale = 0;
         float avrCourage = 0;
 
-        if (npcs.Count > 0)
+        avrMorale = (elfArcher.morale + humanPriest.morale + dwarfWarrior.morale + humanWarrior.morale) / 4;
+        avrCourage = (elfArcher.courage + humanPriest.courage + dwarfWarrior.courage + humanWarrior.courage) / 4;
+
+
+
+        if (startItems) // itemCount계산
         {
-            for (int i = 0; i < npcs.Count; i++) // 평균값 계산
-            {
-                avrMorale += npcs[i].morale;
-                avrCourage += npcs[i].courage;
-            }
-            avrMorale /= npcs.Count;
-            avrCourage /= npcs.Count;
+            itemCount = 6;
+            Debug.Log("Spawn start items");
+            startItems = false;
         }
-
-
-        if (dayCount == 1) itemCount = 6;  // itemCount계산
         else
         {
-            for (int i = 0; i < npcs.Count; i++)
-            {
-                if (npcs[i].fullness < 20) itemCount -= 3;
-                else if(npcs[i].fullness < 50) itemCount -= 2;
-                else if (npcs[i].fullness < 80) itemCount -= 1;
-            }
+            if (elfArcher.fullness < 20) itemCount -= 3;
+            else if (elfArcher.fullness < 50) itemCount -= 2;
+            else if (elfArcher.fullness < 80) itemCount -= 1;
+            if (humanPriest.fullness < 20) itemCount -= 3;
+            else if (humanPriest.fullness < 50) itemCount -= 2;
+            else if (humanPriest.fullness < 80) itemCount -= 1;
+            if (dwarfWarrior.fullness < 20) itemCount -= 3;
+            else if (dwarfWarrior.fullness < 50) itemCount -= 2;
+            else if (dwarfWarrior.fullness < 80) itemCount -= 1;
+            if (humanWarrior.fullness < 20) itemCount -= 3;
+            else if (humanWarrior.fullness < 50) itemCount -= 2;
+            else if (humanWarrior.fullness < 80) itemCount -= 1;
+
             itemCount += (int)(avrMorale / 20);
             itemCount += (int)(avrCourage / 20);
         }
@@ -148,24 +158,33 @@ public class StageController : MonoBehaviour
         {
             switch (stageNum)
             {
+                case 0:
+                    SceneManager.LoadScene("Stage1_Forest");
+                    startItems = true;
+                    stageNum++;
+                    break;
                 case 1: // 스테이지 1에서 2로 이동
                     SceneManager.LoadScene("Stage2_Ocean");
+                    startItems = true;
                     stageNum++;
                     break;
                 case 2: // 스테이지 2에서 3로 이동
                     SceneManager.LoadScene("Stage3_MushroomForest");
+                    startItems = true;
                     stageNum++; 
                     break;
                 case 3: // 스테이지 3에서 4로 이동
                     SceneManager.LoadScene("Stage4_Snowy land");
+                    startItems = true;
                     stageNum++; 
                     break;
                 case 4: // 스테이지 4에서 5로 이동
                     SceneManager.LoadScene("Stage5_Volcano");
+                    startItems = true;
                     stageNum++; 
                     break;
                 case 5: // 스테이지 5에서 엔딩으로 이동
-                    SceneManager.LoadScene("Ending");
+                    SceneManager.LoadScene("ending");
                     break;
             }
         }
@@ -176,17 +195,32 @@ public class StageController : MonoBehaviour
         {
             dayCount += 0.5f;
             cookCount = 0;
-            if (dayCount % 1 != 0) SpawnItems(); // 밤이 되면 아이템 생성
+            if (dayCount % 1 != 0)  // 밤 전환
+            {
+                SpawnItems();
+                elfArcher.ResetStatus();
+                humanPriest.ResetStatus(); 
+                dwarfWarrior.ResetStatus();
+                humanWarrior.ResetStatus();
+            }
+            else // 아침
+            {
+                elfArcher.fullness = 0;
+                humanPriest.fullness = 0;
+                dwarfWarrior.fullness = 0;
+                humanWarrior.fullness = 0;
+                Inventory.instance.ReducedFreshness();
+            }
         }
     }
     void ResetStageStatus() // 스테이지 리셋 함수
     {
         isPreparedStage = false;
 
-        npcs.Clear();  // NPC배열 초기화
-
-        NPC[] foundNPCs = GameObject.FindObjectsOfType<NPC>();
-        npcs.AddRange(foundNPCs);
+        elfArcher = GameObject.Find("Elf Archer").GetComponent<NPC>();
+        humanPriest = GameObject.Find("Human Priest").GetComponent<NPCA>();
+        dwarfWarrior = GameObject.Find("Dwarf Warrior").GetComponent<NPCS>();
+        humanWarrior = GameObject.Find("Human Warrior").GetComponent<NPCD>();
         itemSpawnPoint = GameObject.Find("ItemBucket").GetComponent<Transform>(); // item스폰위치 초기화
     }
 }
