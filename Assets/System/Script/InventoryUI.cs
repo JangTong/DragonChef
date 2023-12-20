@@ -411,4 +411,16 @@ public class InventoryUI : MonoBehaviour
             InvOpen();
         }
     }
+
+    public void OnPre()
+    {
+        StageController.instance.GoToNextTime();
+    }
+
+    public void NextStage()
+    {
+        Debug.Log("On NextStage Func, StageNum:" + StageController.instance.stageNum);
+        if (StageController.instance.stageNum == 5) StageController.instance.SpawnLegends();
+        else StageController.instance.OnPrepareStage();
+    }
 }

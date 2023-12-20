@@ -53,10 +53,12 @@ public class Player : MonoBehaviour
     
     public bool isClick = false;
     
+    public GameObject leg;
+    
     // Start is called before the first frame update
     void Start()
     {
-        // anim = GetComponentInChildren<Animator>();
+        anim = GetComponentInChildren<Animator>();
         
         CookUI.SetActive(false);                    // 시작하자마자 COOKING UI 꺼놓음
     }
@@ -81,6 +83,19 @@ public class Player : MonoBehaviour
         FixedUpdate();                              // Player의 물리 문제를 고치는 함수
         
         ActInfo();                                  // 인벤 UI가 열려있는지 닫혀있는지를 받는 함수
+        
+        if (hAxis > 0f || hAxis < 0f)
+        {
+            transform.Translate(new Vector3(hAxis* speed * Time.deltaTime, 0f));
+
+        }
+        if (vAxis > 0f || vAxis < 0f)
+        {
+            transform.Translate(new Vector3(vAxis * speed * Time.deltaTime, 0f));
+        }
+
+        anim.SetFloat("MoveX", hAxis);
+        anim.SetFloat("MoveY", vAxis);
 
     }
     
@@ -328,11 +343,14 @@ public class Player : MonoBehaviour
                     
                 }
                 
-                
             }
         }
         else                                                // 인벤이 꺼지면 같이 거짐
             CookUI.SetActive(false);
+            
+        if(other.tag == "leg" && leg.activeSelf == true) {
+            StageController.instance.isPreparedStage = true;
+        }
     }
     
     void OnTriggerExit(Collider other) {                    // 얘는 이제 현재는 Player가 인벤이 열려있어도 움직일 수 있으니 적을라캤는데 그냥 인벤 열려있을 때에는 못움직이게 만들고싶음 ㅎㅎ

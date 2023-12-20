@@ -277,10 +277,8 @@ public class Inventory : MonoBehaviour
     }
     
     public void Give(TypeofItem _item) {
+        isGive = false;
         Debug.Log("Give");
-        
-        isGive = true;
-        
         if (pitems.Count == 0) {
             pitems.Add(_item);
         }
@@ -290,6 +288,8 @@ public class Inventory : MonoBehaviour
         }
         else
             return;
+            
+        isGive = true;
     }
     
     public void LegendaryCook(TypeofItem _item, TypeofItem __item) {

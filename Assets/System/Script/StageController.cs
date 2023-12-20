@@ -24,6 +24,7 @@ public class StageController : MonoBehaviour
     public List<TypeofItem> stage3Items = new List<TypeofItem>();
     public List<TypeofItem> stage4Items = new List<TypeofItem>();
     public List<TypeofItem> stage5Items = new List<TypeofItem>();
+    public List<TypeofItem> legendItems = new List<TypeofItem>();
 
     public NPC elfArcher;
     public NPCA humanPriest;
@@ -33,14 +34,14 @@ public class StageController : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
         {
-            if(instance!=this)
+            if (instance != this)
             {
                 Destroy(gameObject);
             }
@@ -56,10 +57,8 @@ public class StageController : MonoBehaviour
 
     void Update()
     {
-        GoToNextTime();
         GoToNextStage();
         ResetStageStatus();
-        if (startItems) SpawnItems();
     }
 
     void SpawnItems()
@@ -76,7 +75,7 @@ public class StageController : MonoBehaviour
 
         if (startItems) // itemCount계산
         {
-            itemCount = 6;
+            itemCount = 9;
             Debug.Log("Spawn start items");
             startItems = false;
         }
@@ -98,7 +97,7 @@ public class StageController : MonoBehaviour
             itemCount += (int)(avrMorale / 20);
             itemCount += (int)(avrCourage / 20);
         }
-        if(itemCount < 0)itemCount = 0; // 0보다 작으면 0으로 변환
+        if (itemCount < 0) itemCount = 0; // 0보다 작으면 0으로 변환
         Debug.Log($"ItemCount: {itemCount}");
 
 
@@ -143,11 +142,12 @@ public class StageController : MonoBehaviour
         {
             for (int i = 1; i < ItemDB.instance.typeofitem.Count; i++)
             {
-                if ((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage1) && ItemDB.instance.typeofitem[i].itemtag < 100) stage1Items.Add(ItemDB.instance.typeofitem[i]);
-                if ((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage2) && ItemDB.instance.typeofitem[i].itemtag < 100) stage2Items.Add(ItemDB.instance.typeofitem[i]);
-                if ((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage3) && ItemDB.instance.typeofitem[i].itemtag < 100) stage3Items.Add(ItemDB.instance.typeofitem[i]);
-                if ((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage4) && ItemDB.instance.typeofitem[i].itemtag < 100) stage4Items.Add(ItemDB.instance.typeofitem[i]);
-                if ((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage5) && ItemDB.instance.typeofitem[i].itemtag < 100) stage5Items.Add(ItemDB.instance.typeofitem[i]);
+                if (((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage1) && ItemDB.instance.typeofitem[i].itemtag < 100 && ItemDB.instance.typeofitem[i].uitemimage != null) || ItemDB.instance.typeofitem[i].itemtag == 9995) stage1Items.Add(ItemDB.instance.typeofitem[i]);
+                if (((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage2) && ItemDB.instance.typeofitem[i].itemtag < 100 && ItemDB.instance.typeofitem[i].uitemimage != null) || ItemDB.instance.typeofitem[i].itemtag == 9996) stage2Items.Add(ItemDB.instance.typeofitem[i]);
+                if (((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage3) && ItemDB.instance.typeofitem[i].itemtag < 100 && ItemDB.instance.typeofitem[i].uitemimage != null) || ItemDB.instance.typeofitem[i].itemtag == 9997) stage3Items.Add(ItemDB.instance.typeofitem[i]);
+                if (((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage4) && ItemDB.instance.typeofitem[i].itemtag < 100 && ItemDB.instance.typeofitem[i].uitemimage != null) || ItemDB.instance.typeofitem[i].itemtag == 9998) stage4Items.Add(ItemDB.instance.typeofitem[i]);
+                if (((ItemDB.instance.typeofitem[i].origin == Origins.Stage0 || ItemDB.instance.typeofitem[i].origin == Origins.Stage5) && ItemDB.instance.typeofitem[i].itemtag < 100 && ItemDB.instance.typeofitem[i].uitemimage != null) || ItemDB.instance.typeofitem[i].itemtag == 9999) stage5Items.Add(ItemDB.instance.typeofitem[i]);
+                if (ItemDB.instance.typeofitem[i].itemtag == 9995 || ItemDB.instance.typeofitem[i].itemtag == 9996 || ItemDB.instance.typeofitem[i].itemtag == 9997 || ItemDB.instance.typeofitem[i].itemtag == 9998 || ItemDB.instance.typeofitem[i].itemtag == 9999) legendItems.Add(ItemDB.instance.typeofitem[i]);
             }
             Debug.Log("Stage item list Generated");
         }
@@ -171,17 +171,17 @@ public class StageController : MonoBehaviour
                 case 2: // 스테이지 2에서 3로 이동
                     SceneManager.LoadScene("Stage3_MushroomForest");
                     startItems = true;
-                    stageNum++; 
+                    stageNum++;
                     break;
                 case 3: // 스테이지 3에서 4로 이동
                     SceneManager.LoadScene("Stage4_Snowy land");
                     startItems = true;
-                    stageNum++; 
+                    stageNum++;
                     break;
                 case 4: // 스테이지 4에서 5로 이동
                     SceneManager.LoadScene("Stage5_Volcano");
                     startItems = true;
-                    stageNum++; 
+                    stageNum++;
                     break;
                 case 5: // 스테이지 5에서 엔딩으로 이동
                     SceneManager.LoadScene("ending");
@@ -189,28 +189,24 @@ public class StageController : MonoBehaviour
             }
         }
     }
-    void GoToNextTime() // 시간 전환 함수
+    public void GoToNextTime() // 시간 전환 함수
     {
-        if(cookCount > 6) // 요리 횟수 6번 초과 시 시간전환
+        dayCount += 0.5f;
+        if (dayCount % 1 != 0)  // 밤 전환
         {
-            dayCount += 0.5f;
-            cookCount = 0;
-            if (dayCount % 1 != 0)  // 밤 전환
-            {
-                SpawnItems();
-                elfArcher.ResetStatus();
-                humanPriest.ResetStatus(); 
-                dwarfWarrior.ResetStatus();
-                humanWarrior.ResetStatus();
-            }
-            else // 아침
-            {
-                elfArcher.fullness = 0;
-                humanPriest.fullness = 0;
-                dwarfWarrior.fullness = 0;
-                humanWarrior.fullness = 0;
-                Inventory.instance.ReducedFreshness();
-            }
+            SpawnItems();
+            elfArcher.ResetStatus();
+            humanPriest.ResetStatus();
+            dwarfWarrior.ResetStatus();
+            humanWarrior.ResetStatus();
+        }
+        else // 아침
+        {
+            elfArcher.fullness = 0;
+            humanPriest.fullness = 0;
+            dwarfWarrior.fullness = 0;
+            humanWarrior.fullness = 0;
+            Inventory.instance.ReducedFreshness();
         }
     }
     void ResetStageStatus() // 스테이지 리셋 함수
@@ -222,5 +218,31 @@ public class StageController : MonoBehaviour
         dwarfWarrior = GameObject.Find("Dwarf Warrior").GetComponent<NPCS>();
         humanWarrior = GameObject.Find("Human Warrior").GetComponent<NPCD>();
         itemSpawnPoint = GameObject.Find("ItemBucket").GetComponent<Transform>(); // item스폰위치 초기화
+    }
+
+    public void OnPrepareStage()
+    {
+        Debug.Log("1");
+        if (Inventory.instance.items.Find(element => element.itemtag == 9995) != null || Inventory.instance.items.Find(element => element.itemtag == 9996) != null || Inventory.instance.items.Find(element => element.itemtag == 9997) != null || Inventory.instance.items.Find(element => element.itemtag == 9998) != null)
+        {
+            Debug.Log("2");
+            isPreparedStage = true;
+        }
+    }
+
+    public void SpawnLegends()
+    {
+        for (int i = 0; i < 5; i++) // 아이템 생성
+        {
+            float randomX = Random.Range(-0.5f, 0.5f);
+            float randomZ = Random.Range(-0.5f, 0.5f);
+            Vector3 spawnPosition = itemSpawnPoint.position + new Vector3(randomX, 0.3f, randomZ); // 아이템 스폰포인트 지정
+
+            // 아이템 스폰
+
+            GameObject spawnedItem = Instantiate(fieldItemPrefab, spawnPosition, Quaternion.identity);
+            spawnedItem.GetComponent<FieldItems>().SetItem(legendItems[i]);
+        }
+        Debug.Log("Spawn legends");
     }
 }

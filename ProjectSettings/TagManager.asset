@@ -15,6 +15,7 @@ TagManager:
   - Priest
   - Warrior
   - Yongsa
+  - leg
   layers:
   - Default
   - TransparentFX
