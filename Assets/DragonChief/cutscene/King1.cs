@@ -3,34 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering;
 
 [System.Serializable]
-public class Dialogue
+public class Dialogue1
 {
     [TextArea]
     public string ddialogue;
     public Sprite sprite;
 }
 
-public class King : MonoBehaviour
+public class King1 : MonoBehaviour
 {
     [SerializeField] private Image sprite_person;
     [SerializeField] private Image sprite_DialogueBox;
     [SerializeField] private TMP_Text txt_Dialogue;
-    [SerializeField] private Button button;
+    //[SerializeField] private Button button;
 
     private bool isDialogue = false;  //대화진행중
 
     public int count =0;  //대화어느정도 진행되었는지
 
-    [SerializeField] private Dialogue[] dialogue;
+    [SerializeField] private Dialogue1[] dialogue;
 
 
+    private void Start()
+    {
+        ShowDialogue();
+    }
 
     public void ShowDialogue()
     {
         OnOff(true);
-        button.gameObject.SetActive(false);
+        //button.gameObject.SetActive(false);
         //count = 0;
         NextDialogue();
     }
@@ -56,6 +61,7 @@ public class King : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //ShowDialogue();
         if (isDialogue)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -66,15 +72,8 @@ public class King : MonoBehaviour
                     count++;
                 }
                 else
-                {
                     OnOff(false);
-                    StageController.instance.isPreparedStage = true;
-                }
-                    
             }
         }
-        else
-            if (Input.GetKeyDown(KeyCode.Space))
-                ShowDialogue();
     }
 }
