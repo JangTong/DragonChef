@@ -83,16 +83,6 @@ public class Player : MonoBehaviour
         FixedUpdate();                              // Player의 물리 문제를 고치는 함수
         
         ActInfo();                                  // 인벤 UI가 열려있는지 닫혀있는지를 받는 함수
-        
-        if (hAxis > 0f || hAxis < 0f)
-        {
-            transform.Translate(new Vector3(hAxis* speed * Time.deltaTime, 0f));
-
-        }
-        if (vAxis > 0f || vAxis < 0f)
-        {
-            transform.Translate(new Vector3(vAxis * speed * Time.deltaTime, 0f));
-        }
 
         anim.SetFloat("MoveX", hAxis);
         anim.SetFloat("MoveY", vAxis);

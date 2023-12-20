@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08223454, g: 0.036458828, b: 0.14219908, a: 1}
+  m_IndirectSpecularColor: {r: 0.0821553, g: 0.036384165, b: 0.14212337, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17036,6 +17036,11 @@ PrefabInstance:
       propertyPath: InvUI
       value: 
       objectReference: {fileID: 1715648404}
+    - target: {fileID: 725404628990626861, guid: 87d1c2ebd7cd54f2ab5f571f17ccfebd,
+        type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 725404628990626861, guid: 87d1c2ebd7cd54f2ab5f571f17ccfebd,
         type: 3}
       propertyPath: CookUI

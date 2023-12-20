@@ -1986,11 +1986,6 @@ PrefabInstance:
       objectReference: {fileID: 913978023}
     - target: {fileID: 725404628990626861, guid: 87d1c2ebd7cd54f2ab5f571f17ccfebd,
         type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 725404628990626861, guid: 87d1c2ebd7cd54f2ab5f571f17ccfebd,
-        type: 3}
       propertyPath: CookUI
       value: 
       objectReference: {fileID: 913978022}
