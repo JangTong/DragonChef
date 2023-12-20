@@ -183,7 +183,11 @@ public class Inventory : MonoBehaviour
                 pos = Cook2.transform.position;
             else
                 pos = new Vector3(0, 3, 0);
-            
+
+            cut.fullness *= 2;
+            cut.power *= 2;
+            cut.efficiency *= 2;
+
             GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
             go.GetComponent<FieldItems>().SetItem(cut);
                     
@@ -209,7 +213,11 @@ public class Inventory : MonoBehaviour
                 pos = Cook2.transform.position;
             else
                 pos = new Vector3(0, 3, 0);
-            
+
+            cut.fullness *= 2;
+            cut.power *= 2;
+            cut.efficiency *= 2;
+
             GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
             go.GetComponent<FieldItems>().SetItem(cut);
                     
@@ -236,7 +244,11 @@ public class Inventory : MonoBehaviour
                 pos = Cook2.transform.position;
             else
                 pos = new Vector3(0, 3, 0);
-            
+
+            cut.fullness *= 2;
+            cut.power *= 2;
+            cut.efficiency *= 2;
+
             GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
             go.GetComponent<FieldItems>().SetItem(cut);
                     
@@ -263,7 +275,11 @@ public class Inventory : MonoBehaviour
                 pos = Cook2.transform.position;
             else
                 pos = new Vector3(0, 3, 0);
-            
+
+            cut.fullness *= 2;
+            cut.power *= 2;
+            cut.efficiency *= 2;
+
             GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
             go.GetComponent<FieldItems>().SetItem(cut);
                     
