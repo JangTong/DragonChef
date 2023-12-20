@@ -16,6 +16,7 @@ TagManager:
   - Warrior
   - Yongsa
   - leg
+  - j
   layers:
   - Default
   - TransparentFX

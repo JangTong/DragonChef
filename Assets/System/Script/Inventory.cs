@@ -293,8 +293,10 @@ public class Inventory : MonoBehaviour
     }
     
     public void LegendaryCook(TypeofItem _item, TypeofItem __item) {
-        if (_item.itemtag == 9995 && _item.itemtag == 9996) {
-            
+        Debug.Log("3");
+        if (_item.itemtag == 9995 && __item.itemtag == 9996) {
+            Debug.Log("2");
+
             TypeofItem cut = ItemDB.instance.typeofitem.Find(element => element.itemtag == 99991);
             
             pos = Cook1.transform.position;
@@ -302,7 +304,7 @@ public class Inventory : MonoBehaviour
             go.GetComponent<FieldItems>().SetItem(cut);
             
         }
-        else if (_item.itemtag == 9997 && _item.itemtag == 9998) {
+        else if (_item.itemtag == 9997 && __item.itemtag == 9998) {
             
             TypeofItem cut = ItemDB.instance.typeofitem.Find(element => element.itemtag == 99992);
             
@@ -312,7 +314,7 @@ public class Inventory : MonoBehaviour
             
         }
         
-        else if (_item.itemtag == 99991 && _item.itemtag == 99992) {
+        else if (_item.itemtag == 99991 && __item.itemtag == 99992) {
             
             TypeofItem cut = ItemDB.instance.typeofitem.Find(element => element.itemtag == 99993);
             
@@ -322,7 +324,8 @@ public class Inventory : MonoBehaviour
             
         }
         
-        else if (_item.itemtag == 99993 && _item.itemtag == 9998) {
+        else if (_item.itemtag == 99993 && __item.itemtag == 9999) {
+            Debug.Log("이젠집에좀가자");
             lgd.gameObject.SetActive(true);
         }
     }

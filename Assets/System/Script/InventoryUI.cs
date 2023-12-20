@@ -354,7 +354,7 @@ public class InventoryUI : MonoBehaviour
     }
     
     public void triggerGive() {
-        if (Inventory.instance.cooknum >= 6) {
+        if (Inventory.instance.cooknum >= 6 && Inventory.instance.cooknum <= 9) {
             List<TypeofItem> _citem = new List<TypeofItem>();
                                         
             _citem.Add(Inventory.instance.citems[0]);
@@ -381,7 +381,8 @@ public class InventoryUI : MonoBehaviour
     }
     
     public void triggerLegend() {
-        if (Inventory.instance.isLegend == true) {
+        if (Inventory.instance.cooknum == 99) {
+            Debug.Log("1");
             List<TypeofItem> _citem = new List<TypeofItem>();
             
             // Debug.Log(Inventory.instance.citems[0].itemtag);

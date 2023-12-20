@@ -342,7 +342,14 @@ public class Player : MonoBehaviour
                     Inventory.instance.cooknum = 9;
                     
                 }
-                
+
+                else if (other.tag == "j")
+                {
+                    CookUI.SetActive(true);
+                    Inventory.instance.cooknum = 99;
+
+                }
+
             }
         }
         else                                                // 인벤이 꺼지면 같이 거짐
