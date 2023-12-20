@@ -52,10 +52,18 @@ public class Inventory : MonoBehaviour
     
     public int cooktime = 1;
     
+    public GameObject lgd;
+    
     Vector3 pos;
     
     public GameObject Cook1;
     public GameObject Cook2;
+    
+    public bool isLegend = false;
+    public bool isFull = false;
+    public bool isGive = false;
+    
+    public List<TypeofItem> pitems = new List<TypeofItem>(); 
     
     // Start is called before the first frame update
     void Start()
@@ -69,7 +77,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        DaynNight();
     }
     
     public bool AddItem(TypeofItem _item) {                                 // 아이템을 먹을 때 items 리스트에 저장해주는 함수
@@ -261,4 +269,74 @@ public class Inventory : MonoBehaviour
         else
             Debug.Log("더이상 튀기면 신발도 맛 없을 것 같다...");
     }
+    
+    public void Give(TypeofItem _item) {
+        Debug.Log("Give");
+        
+        isGive = true;
+        
+        if (pitems.Count == 0) {
+            pitems.Add(_item);
+        }
+        else if (pitems.Count == 1) {
+            pitems.RemoveAt(0);
+            pitems.Add(_item);
+        }
+        else
+            return;
+    }
+    
+    public void LegendaryCook(TypeofItem _item, TypeofItem __item) {
+        if (_item.itemtag == 9995 && _item.itemtag == 9996) {
+            
+            TypeofItem cut = ItemDB.instance.typeofitem.Find(element => element.itemtag == 99991);
+            
+            pos = Cook1.transform.position;
+            GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
+            go.GetComponent<FieldItems>().SetItem(cut);
+            
+        }
+        else if (_item.itemtag == 9997 && _item.itemtag == 9998) {
+            
+            TypeofItem cut = ItemDB.instance.typeofitem.Find(element => element.itemtag == 99992);
+            
+            pos = Cook1.transform.position;
+            GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
+            go.GetComponent<FieldItems>().SetItem(cut);
+            
+        }
+        
+        else if (_item.itemtag == 99991 && _item.itemtag == 99992) {
+            
+            TypeofItem cut = ItemDB.instance.typeofitem.Find(element => element.itemtag == 99993);
+            
+            pos = Cook1.transform.position;
+            GameObject go = Instantiate(fieldItemPrefab, pos, Quaternion.identity);
+            go.GetComponent<FieldItems>().SetItem(cut);
+            
+        }
+        
+        else if (_item.itemtag == 99993 && _item.itemtag == 9998) {
+            lgd.gameObject.SetActive(true);
+        }
+    }
+    
+    public void IsLegend() {
+        isLegend = !isLegend;
+    }
+    
+    public void DaynNight() {
+        if (isFull == true) {
+            for (int i = 0; i < items.Count; i++) {
+                if (items[i].freshness > 0)
+                    items[i].freshness = items[i].freshness - 1;
+                else if (items[i].freshness == 0)
+                    items.RemoveAt(i);
+                
+            }
+        }
+    }
+    
+    
+    
 }

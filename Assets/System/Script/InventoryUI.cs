@@ -183,15 +183,15 @@ public class InventoryUI : MonoBehaviour
             
             Inventory.instance.cooktime = 2;
             Inventory.instance.Knife(_citem[1]);
+                        
+            Inventory.instance.citems.RemoveAt(0);
+            Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
             
             Inventory.instance.citems.RemoveAt(0);
-            Inventory.instance.citems.RemoveAt(0);
+            Inventory.instance.RemoveAfterCook(cslots[1].slotnum - 1);
             
             RemoveCookingFUI();
             RemoveCookingSUI();
-                
-            Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
-            Inventory.instance.RemoveAfterCook(cslots[1].slotnum);
             
             InvOpen();
         }
@@ -225,7 +225,7 @@ public class InventoryUI : MonoBehaviour
                 Inventory.instance.citems.RemoveAt(0);
                 
                 Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
-                Inventory.instance.RemoveAfterCook(cslots[1].slotnum);
+                Inventory.instance.RemoveAfterCook(cslots[1].slotnum - 1);
                 
                 RemoveCookingFUI();
                 RemoveCookingSUI();
@@ -264,7 +264,7 @@ public class InventoryUI : MonoBehaviour
                 Inventory.instance.citems.RemoveAt(0);
                 
                 Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
-                Inventory.instance.RemoveAfterCook(cslots[1].slotnum);
+                Inventory.instance.RemoveAfterCook(cslots[1].slotnum - 1);
                 
                 RemoveCookingFUI();
                 RemoveCookingSUI();
@@ -303,7 +303,7 @@ public class InventoryUI : MonoBehaviour
                 Inventory.instance.citems.RemoveAt(0);
                 
                 Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
-                Inventory.instance.RemoveAfterCook(cslots[1].slotnum);
+                Inventory.instance.RemoveAfterCook(cslots[0].slotnum - 1);
                 
                 RemoveCookingFUI();
                 RemoveCookingSUI();
@@ -313,6 +313,7 @@ public class InventoryUI : MonoBehaviour
             
         }
     }
+    
     public void triggerDeep() {
         if (Inventory.instance.cooknum == 5) {
             // if ( Inventory.instance.citems[0] != null) {
@@ -341,7 +342,7 @@ public class InventoryUI : MonoBehaviour
                 Inventory.instance.citems.RemoveAt(0);
                 
                 Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
-                Inventory.instance.RemoveAfterCook(cslots[1].slotnum);
+                Inventory.instance.RemoveAfterCook(cslots[1].slotnum - 1);
                 
                 RemoveCookingFUI();
                 RemoveCookingSUI();
@@ -352,4 +353,62 @@ public class InventoryUI : MonoBehaviour
         }
     }
     
+    public void triggerGive() {
+        if (Inventory.instance.cooknum >= 6) {
+            List<TypeofItem> _citem = new List<TypeofItem>();
+                                        
+            _citem.Add(Inventory.instance.citems[0]);
+            _citem.Add(Inventory.instance.citems[1]);
+                       
+            Inventory.instance.cooktime = 1;
+            Inventory.instance.Give(_citem[0]);
+            
+            Inventory.instance.cooktime = 2;
+            Inventory.instance.Give(_citem[1]);
+            
+            Inventory.instance.citems.RemoveAt(0);
+            Inventory.instance.citems.RemoveAt(0);
+            
+            Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
+            Inventory.instance.RemoveAfterCook(cslots[1].slotnum - 1);
+            
+            RemoveCookingFUI();
+            RemoveCookingSUI();
+            
+            InvOpen();
+            
+        }
+    }
+    
+    public void triggerLegend() {
+        if (Inventory.instance.isLegend == true) {
+            List<TypeofItem> _citem = new List<TypeofItem>();
+            
+            // Debug.Log(Inventory.instance.citems[0].itemtag);
+                            
+            _citem.Add(Inventory.instance.citems[0]);
+            
+            // Debug.Log(_citem[0].itemtag);
+            
+            _citem.Add(Inventory.instance.citems[1]);
+            
+            // Debug.Log(_citem[1].itemtag);
+           
+            Inventory.instance.LegendaryCook(_citem[0], _citem[1]);
+            
+            // Debug.Log(_citem[0].itemtag);
+            // Debug.Log(_citem[1].itemtag);
+            
+            Inventory.instance.citems.RemoveAt(0);
+            Inventory.instance.citems.RemoveAt(0);
+            
+            Inventory.instance.RemoveAfterCook(cslots[0].slotnum);
+            Inventory.instance.RemoveAfterCook(cslots[1].slotnum - 1);
+            
+            RemoveCookingFUI();
+            RemoveCookingSUI();
+            
+            InvOpen();
+        }
+    }
 }

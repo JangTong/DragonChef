@@ -304,6 +304,31 @@ public class Player : MonoBehaviour
                     
                 }
                 
+                else if(other.tag == "Archer") {
+                    CookUI.SetActive(true);
+                    Inventory.instance.cooknum = 6;
+                    
+                }
+                
+                else if(other.tag == "Priest") {
+                    CookUI.SetActive(true);
+                    Inventory.instance.cooknum = 7;
+                    
+                }
+                
+                else if(other.tag == "Warrior") {
+                    CookUI.SetActive(true);
+                    Inventory.instance.cooknum = 8;
+                    
+                }
+                
+                else if(other.tag == "Yongsa") {
+                    CookUI.SetActive(true);
+                    Inventory.instance.cooknum = 9;
+                    
+                }
+                
+                
             }
         }
         else                                                // 인벤이 꺼지면 같이 거짐

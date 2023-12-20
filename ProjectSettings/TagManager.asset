@@ -11,6 +11,10 @@ TagManager:
   - Pot
   - FryingPan
   - Fryer
+  - Archer
+  - Priest
+  - Warrior
+  - Yongsa
   layers:
   - Default
   - TransparentFX

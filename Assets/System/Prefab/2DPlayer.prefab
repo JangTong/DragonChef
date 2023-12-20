@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7617993741344840674}
   - component: {fileID: 1726652884917908889}
   - component: {fileID: 2494333980123755824}
-  - component: {fileID: 4351346983682669580}
+  - component: {fileID: 9015865754995606670}
   - component: {fileID: 3587276969491786104}
   - component: {fileID: 725404628990626861}
   - component: {fileID: 6368058386266023302}
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 1, y: 4, z: -30}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -116,8 +116,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!136 &4351346983682669580
-CapsuleCollider:
+--- !u!65 &9015865754995606670
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,10 +134,8 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.2
-  m_Height: 5.5
-  m_Direction: 1
+  serializedVersion: 3
+  m_Size: {x: 2.67, y: 5.3333335, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &3587276969491786104
 CapsuleCollider:
@@ -158,8 +156,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5.3333335
-  m_Height: 10.666667
+  m_Radius: 2
+  m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &725404628990626861
@@ -209,5 +207,9 @@ MonoBehaviour:
   isCutted: 0
   cooknum: 0
   cooktime: 1
-  Cook1: {fileID: 8515911941418114827, guid: 401eced7f1a514f3099d660f53c571fb, type: 3}
-  Cook2: {fileID: 965154830303011969, guid: 40c443a5e92a84f24a0781516f097a91, type: 3}
+  Cook1: {fileID: 0}
+  Cook2: {fileID: 0}
+  isLegend: 0
+  isFull: 0
+  isGive: 0
+  pitems: []
